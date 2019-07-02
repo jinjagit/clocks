@@ -23,15 +23,12 @@ const clockTick = () => {
 
 const startClock = () => {
   lastUpdate = getTime();
-  runClock = setInterval(function() {
-    clockTick();
-  }, 1000);
+  runClock = setInterval(function() { clockTick(); }, 1000);
 };
 
 const FRAME_DURATION = 1000;
 const getTime = typeof performance === 'function' ? performance.now : Date.now;
 let lastUpdate = getTime();
-
 let time1 = document.getElementById('time1');
 let secs1 = document.getElementById('secs1');
 let time2 = document.getElementById('time2');

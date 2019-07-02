@@ -28,3 +28,7 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
+.label {
+  font-family: 'Ubuntu', sans-serif;
+}
